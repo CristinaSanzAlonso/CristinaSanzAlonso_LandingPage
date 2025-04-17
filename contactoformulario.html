@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Formulario de contacto</title>
 </head>
 <body>
-    esto es una prueba de contacto
+    <h1 id="titulo">FORMULARIO DE CONTACTO</h1>
+    <form method="get" action="mailto:cristina.sanz508@comunidadunir.net">
+        
+        <fieldset>
+            <legend class="titulodatos">DATOS PERSONALES</legend> 
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Ana" required>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" placeholder="García Pérez" required>
+                <label for="email">Email: </label>
+                <input type="email" placeholder="anagarciaperez@gmail.com" required>
+        </fieldset>
+
+        <fieldset>
+            <legend class="titulodatos">MENSAJE</legend>
+                <label for="texto">A continuación, puedes escribir tu mensaje:</label>    
+                <br><input id="comentario" type="textarea" placeholder="Escribe aquí">
+        </fieldset>
+        
+        <div class="botones">
+            <button type="submit" value="enviar" action="mailto:cristina.sanz508@comunidadunir.net">Enviar</button> 
+            <button type="reset" value="borrar">Borrar</button>
+        </div>
+    </form>
 </body>
 </html>

@@ -113,7 +113,7 @@ header .menucabecera li a:hover{
 .contenido .texto3 {
     color: white;
     font-family: titulo;
-    font-size: 20px;
+    font-size: 40px;
     text-transform: lowercase;
 }
 
@@ -356,4 +356,64 @@ h1 {
     font-size: 40px;
     font-weight: bolder;
     color: black;
+}
+
+/*Estilos contactoformulario.html*/
+
+form {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 500px;
+    background-color: rgb(225, 188, 244);
+    border-radius: 10px;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+label {
+    font-family: titulo;
+    font-size: 20px;
+    display: inline;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+#titulo {
+    font-family: titulo;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    padding-bottom: 1.5rem;
+    padding-top: 2.5rem;
+}
+
+.titulodatos {
+    font-family: titulo;
+    font-size: 30px;
+    color: darkorchid;
+}
+
+#comentario {
+    width: 800px;
+    height: 100px;
+    margin-left: 2.5rem;
+}
+
+.botones {
+    display:flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    gap:0.5rem;
+    
 }
