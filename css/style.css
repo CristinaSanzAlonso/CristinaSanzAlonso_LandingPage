@@ -11,6 +11,11 @@
     src: url(../font/Pacifico-Regular.ttf);
 }
 
+@font-face {
+    font-family: cv;
+    src: url(../font/Handlee-Regular.ttf);
+}
+
 *{
     margin:0;
     padding:0;
@@ -133,7 +138,7 @@ section div div a:hover{
 
 .imagen {
     position: absolute;
-    top:5px;
+    top:55px;
     left: 500px;
 }
 
@@ -144,20 +149,22 @@ section div div a:hover{
 
 .imagen2 {
     position: absolute;
-    top:150px;
-    left: 1100px;
+    top: 250px;
+    left: 900px;
 }
 
 .imagen2 img {
-    height: 60%;
-    width: 60%;
+    height: 40%;
+    width: 40%;
     border-radius: 20%;
+   
 }
 
-div .imagen3{
-    width: 700px;
-    margin-left:20px;
-    margin-top: 40px;
+.imagen3{
+    position: absolute;
+    max-width: 700px;
+    left:25px;
+    top: 540px;
 }
 
 
@@ -169,7 +176,7 @@ div .imagen3{
 
 .redessociales ul {
     position: absolute;
-    right: 20px;
+    right: 60px;
     bottom:20px;
     margin: 0;
     padding: 0 100px 30px;
@@ -322,10 +329,13 @@ h1 {
     color: darkorchid
 }
 
+.fotopersonal {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 #foto {
-    position:absolute;
-    top: 100px;
-    left: 600px;
+    position:relative;
     width: 240px;
     height: 300px;
     border-radius: 200px;
@@ -334,7 +344,6 @@ h1 {
 #parrafo {
     font-family: titulo;
     text-align: justify;
-    margin-top: 350px;
     padding-left: 200px;
     padding-right: 200px;
     padding-bottom: 20px;
@@ -365,7 +374,7 @@ form {
     width: 100%;
     height: 100%;
     max-width: 1000px;
-    max-height: 500px;
+    max-height: 600px;
     background-color: rgb(225, 188, 244);
     border-radius: 10px;
     align-items: center;
@@ -377,16 +386,14 @@ fieldset {
 }
 
 legend {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 label {
     font-family: titulo;
     font-size: 20px;
-    display: inline;
-    padding: 2.5rem;
-    margin-top: 2.5rem;
+    display: block;
 }
 
 #titulo {
@@ -413,7 +420,62 @@ label {
 .botones {
     display:flex;
     justify-content: center;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     gap:0.5rem;
     
 }
+
+/*Estilos cv.html*/
+
+.bodycv {
+    margin:10%;
+}
+
+.cabecera .nombre h1,h2 {
+    font-family: titulo;
+    font-size: 4rem;
+    color: darkorchid;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cabecera .nombre h2 {
+    color: black;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.cuerpo .cajaizquierda h3 {
+    color: black;
+    font-family: cv;
+    font-size: 2.5rem;
+}
+
+.cuerpo .cajaderecha h3 {
+    color: black;
+    font-family: cv;
+    font-size: 2.5rem;
+}
+
+.cuerpo .cajaizquierda p,li {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+
+}
+
+.cuerpo .cajaderecha h4 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cuerpo .cajaderecha .nombreempresa,.año,.descripcion {
+    color: black;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.datospersonales, .habilidades, .idiomas, .puesto, .titulo {
+    padding-left: 2.5rem;
+}
+

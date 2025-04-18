@@ -3,25 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Utilizamos la web ionicons para utilizar iconos dentro de nuestra web-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Curriculum Vitae</title>
 </head>
-<body>
-    <h1>CRISTINA SANZ ALONSO</h1>
-    <h2>PROFESORA DE EDUCACIÓN INFANTIL Y DESARROLLADORA WEB</h2>
-    <table>
-        <tr>
-            <td>About me</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-                <p><span>Nacimiento</span>21-03-1991</p>
-                <p><span>Web</span></p><a href="https://github.com/CristinaSanzAlonso" target="_blank">GitHub</a>
-            </td>
-            <td></td>
-        </tr>
-    </table>
+<body class="bodycv">
+    <div class="contenedor">
+        <div class="cabecera">
+            <div class="foto">
+                <img src="img/cris.png" alt="fotopersonal">
+            </div>
+            <div class="nombre">
+                <h1>Cristina Sanz Alonso</h1>
+                <h2>Profesora de educación infantil</h2>
+                <h2>Dessarrolladora de aplicaciones web</h2>
+            </div>
+        </div>
+        <div class="cuerpo">
+            <section class="cajaizquierda">
+                <h3><ion-icon name="desktop-outline"></ion-icon>Perfil Profesional</h3>
+                <hr>
+                <br>
+                <p class="carta">
+                    Profesora de educación infantil con 10 años de experiencia en el sector educativo. 
+                    Actualmente redirigiendo mi carrera profesional hacia el sector teconológico.
+                    Cursando el Grado Superior de Desarrollo de Aplicaciones Web.
+                </p>
+                <br>
+                <h3><ion-icon name="person-circle-outline"></ion-icon>Datos personales</h3>
+                <hr>
+                <br>
+                <ul class="datospersonales">
+                    <li><span class="dato">Email:</span><a href="mailto:cristina.sanz508@comunidadunir.net">cristina.sanz508@comunidadunir.net</a></li>
+                    <li><span class="dato">Teléfono:</span> +34666666666</li>
+                    <li><span class="dato">Linkedln:</span><a href="https://www.linkedin.com/in/cristina-sanz-alonso-4b552299" target="_blank">pincha aquí</a></li>
+                    <li><span class="dato">GitHub:</span><a href="https://github.com/CristinaSanzAlonso" target="_blank">pincha aquí</a></li>
+                </ul>
+                <br>
+                <h3><ion-icon name="extension-puzzle-outline"></ion-icon>Habilidades</h3>
+                <hr>
+                <br>
+                <ul class="habilidades">
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Adaptabilidad</li>
+                    <li>Organización y gestión del tiempo</li>
+                    <li>Escucha activa</li>
+                </ul>
+                <br>
+                <h3><ion-icon name="language-outline"></ion-icon>Idiomas</h3>
+                <hr>
+                <br>
+                <div class="idiomas">
+                    <p>Español</p>
+                    <div class="barra">
+                      <div class="nivel" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="idiomas">
+                    <p>Inglés</p>
+                    <div class="barra">
+                      <div class="nivel" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="idiomas">
+                    <p>Alemán</p>
+                    <div class="barra">
+                      <div class="nivel" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="cajaderecha">
+                <div class="experiencia">
+                    <h3><ion-icon name="briefcase-outline"></ion-icon>Experiencia laboral</h3>
+                    <hr>
+                    <br>
+                    <div class="puesto">
+                        <h4>Puesto</h4>
+                        <div class="nombreempresa">Nombre Empresa</div>
+                        <div class="año">Año</div>
+                        <p class="descripcion">Descripción del puesto</p>
+                        <br>
+                    </div>
+                    <div class="puesto">
+                        <h4>Puesto</h4>
+                        <div class="nombreempresa">Nombre Empresa</div>
+                        <div class="año">Año</div>
+                        <p class="descripcion">Descripción del puesto</p>
+                        <br>
+                    </div>
+                    <div class="puesto">
+                        <h4>Puesto</h4>
+                        <div class="nombreempresa">Nombre Empresa</div>
+                        <div class="año">Año</div>
+                        <p class="descripcion">Descripción del puesto</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="formacion">
+                    <h3><ion-icon name="school-outline"></ion-icon>Formación</h3>
+                    <hr>
+                    <br>
+                    <div class="titulo">
+                        <h4>Titulo</h4>
+                        <div class="nombreempresa">Nombre Centro</div>
+                        <div class="año">Año</div>
+                        <p class="descripcion">Descripción del estudio</p>
+                        <br>
+                    </div>
+                    <div class="titulo">
+                        <h4>Titulo</h4>
+                        <div class="nombreempresa">Nombre Centro</div>
+                        <div class="año">Año</div>
+                        <p class="descripcion">Descripción del estudio</p>
+                        <br>
+                    </div>
+                    <div class="titulo">
+                        <h4>Titulo</h4>
+                        <div class="nombreempresa">Nombre Centro</div>
+                        <div class="año">Año</div>
+                        <p class="descripcion">Descripción del estudio</p>
+                        <br>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
