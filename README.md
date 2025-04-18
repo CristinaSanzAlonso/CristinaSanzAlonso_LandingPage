@@ -1,0 +1,1 @@
+Este repositorio corresponde a la tarea de Landing Page de la asignatura de Lenguaje de Marcas y Sistemas de Gestión de Información del tercer trimestre del Grado Superior de Desarrollo de Aplicaciones Web. 
