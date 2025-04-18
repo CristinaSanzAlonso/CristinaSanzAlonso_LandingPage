@@ -134,7 +134,7 @@ section div div a:hover{
 .imagen {
     position: absolute;
     top:5px;
-    left: 600px;
+    left: 500px;
 }
 
 .imagen img {
@@ -168,7 +168,7 @@ div .imagen3{
 }
 
 .redessociales ul {
-    position: fixed;
+    position: absolute;
     right: 20px;
     bottom:20px;
     margin: 0;
