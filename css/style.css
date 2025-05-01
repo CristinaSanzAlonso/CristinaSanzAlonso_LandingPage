@@ -200,6 +200,42 @@ section div div a:hover{
     padding-right: 6px;
 }
 
+@media (max-width:576px) {
+
+    .imagen,.imagen2,.imagen3 {
+        visibility: hidden;
+    }
+
+    .menucabecera {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenido {
+        display: flex;
+        justify-content: center;
+    }
+
+    .index_texto {
+       margin-top: 150px;
+       max-width: 100vw;
+    }
+
+    .texto h1 {
+        font-size: 30px;
+    }
+
+    .redessociales {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 150px;
+    }
+
+}
+
 /*Estilos descubremas.html*/
 
 .servicios {
@@ -312,6 +348,49 @@ section div div a:hover{
     text-decoration: none;
 }
 
+@media (max-width:576px) {
+
+    body {
+        background-image: url(../img/fondo5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+    
+    header {
+        margin: auto;
+        padding-right: 80px;
+    }
+
+    .menucabecera {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .servicios {
+        margin-top: 250px;
+    }
+
+    .servicios h1,h2 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .flipcards {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        height: 100%;
+    }
+
+}
+
+
 /*Estilos quiensoy.html*/
 
 h1 {
@@ -364,6 +443,17 @@ h1 {
     font-size: 40px;
     font-weight: bolder;
     color: black;
+}
+
+@media (max-width:576px) {
+
+    #presentacion {
+        margin-top: 250px;
+    }
+
+    #parrafo {
+        padding: 20px;
+    }
 }
 
 /*Estilos contactoformulario.html*/
@@ -425,6 +515,21 @@ label {
     justify-content: center;
     margin-top: 2.5rem;
     gap:0.5rem;
+}
+
+@media (max-width:576px) {
+
+    #titulo {
+        margin-top: 250px;
+    }
+
+    #formulario_contacto {
+        max-width: 90%;
+    }
+
+    #comentario {
+        max-width: 370px;
+    }
 }
 
 /*Estilos cv.html*/
@@ -599,4 +704,40 @@ div .foto {
     content:"✔️";
 }
 
-/*prueba para pages*/
+.media_query {
+    display: none; /*para que no aparezca si el tamaño de la pantalla es mayor a 576px*/
+}
+
+@media (max-width:576px) {
+    .contenedor {
+        display: none; /*para que no aparezca el CV si el tamaño de la pantalla es menor a 576px*/
+    }
+
+    .media_query {
+        display:block;
+        margin-top: 250px;
+    }
+
+    .media_query p {
+        font-family: escrita;
+        font-size: 20px;
+        text-align: center;
+    }    
+
+    .media_query a {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-family: titulo;
+        font-size: 50px;
+        text-decoration: none;
+        color: darkorchid;
+    }
+
+    .media_query a:hover{
+        background-color: black;
+        color: white;
+        transition: 2s;
+        border-radius: 10px;
+    }
+}
