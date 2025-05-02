@@ -200,38 +200,88 @@ section div div a:hover{
     padding-right: 6px;
 }
 
+@media (max-width:992px) {
+    
+    body {
+        background-image: url(../img/fondo5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menucabecera {
+        flex-direction: row;
+        padding-left: 0%;
+        margin-left: 9rem;
+    }
+
+    .imagen {
+        margin-top: 90px;
+        width: 50%;
+    }
+
+    .imagen2,.imagen3 {
+        display: none;
+    }
+
+    .index_texto {
+        margin-top: 150px;
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .redessociales{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        bottom: 5px;
+    }
+
+}
+
 @media (max-width:576px) {
 
     .imagen,.imagen2,.imagen3 {
         visibility: hidden;
     }
 
+    header {
+        position: relative;
+        width: 100%;
+    }
+
     .menucabecera {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column; 
     }
 
     .contenido {
-        display: flex;
-        justify-content: center;
+        display: block;
+        margin-left: 5rem;
+        text-align: center;
     }
 
     .index_texto {
-       margin-top: 150px;
-       max-width: 100vw;
+       margin-top: 90px;
+       max-width: 50%;
     }
 
-    .texto h1 {
-        font-size: 30px;
+    .letrapequeña {
+        font-size: 5px;
     }
 
     .redessociales {
-        position: fixed;
+        position: relative;
         display: flex;
-        justify-content: center;
         width: 100%;
-        margin-top: 150px;
+        top: 200px;
     }
 
 }
@@ -243,6 +293,7 @@ section div div a:hover{
     color: darkorchid;
     text-align: center;
     font-size: 60px;
+    margin-top: 5rem;
 }
 
 .servicios #frase{
@@ -348,6 +399,61 @@ section div div a:hover{
     text-decoration: none;
 }
 
+@media (max-width:992px) {
+
+    body {
+        background-image: url(../img/fondo5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+    
+    .menucabecera {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 9rem;
+    }
+    
+    .servicios {
+        margin-top: 100px;
+    }
+
+    .servicios h1,h2 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .servicios h1 {
+        font-size: 5rem;
+    }
+
+    .flipcards {
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+        height: 60%;
+        padding-bottom: 5rem;
+    }
+
+    .card img {
+        width: 80%;
+        height: auto;
+    }
+
+    .card .descripcion {
+        font-size: medium;
+    }
+
+    .card .preenlace {
+        font-size: large;
+    }
+
+}
+
 @media (max-width:576px) {
 
     body {
@@ -372,13 +478,17 @@ section div div a:hover{
     }
     
     .servicios {
-        margin-top: 250px;
+        margin-top: 80px;
     }
 
     .servicios h1,h2 {
         display: flex;
         justify-content: center;
         position: relative;
+    }
+
+    .servicios h1 {
+        font-size: 5rem;
     }
 
     .flipcards {
@@ -388,8 +498,26 @@ section div div a:hover{
         height: 100%;
     }
 
-}
+    .card img {
+        width: 40%;
+        height: auto;
+    }
 
+    .card .fuente {
+        font-size: medium;
+    }
+
+    .card .descripcion {
+        font-size: small;
+    }
+
+    .card .preenlace {
+        font-size: medium;
+    }
+    .card .enlace{
+        font-size: medium;
+    }
+}
 
 /*Estilos quiensoy.html*/
 
@@ -401,6 +529,7 @@ h1 {
     font-family: escrita;
     font-size: 40px;
     color:black;
+    margin-top: 10rem;
 }
 
 #presentacion #nombre{
@@ -445,10 +574,54 @@ h1 {
     color: black;
 }
 
-@media (max-width:576px) {
+@media (max-width:992px) {
+
+    body {
+        background-image: url(../img/fondo5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .menucabecera {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 9rem;
+    }
+    
 
     #presentacion {
-        margin-top: 250px;
+        margin-top: 150px;
+    }
+
+    #parrafo {
+        padding: 20px;
+    }
+}
+
+@media (max-width:576px) {
+
+    body {
+        background-image: url(../img/fondo5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+
+    .menucabecera {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 9rem;
+    }
+
+    #presentacion {
+        margin-top: 100px;
     }
 
     #parrafo {
@@ -492,6 +665,7 @@ label {
     color: black;
     padding-bottom: 1.5rem;
     padding-top: 2.5rem;
+    margin-top: 5rem;
 }
 
 .titulodatos {
@@ -517,10 +691,41 @@ label {
     gap:0.5rem;
 }
 
-@media (max-width:576px) {
+
+@media (max-width:992px) {
+
+    .menucabecera {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 9rem;
+    }
+    
 
     #titulo {
-        margin-top: 250px;
+        margin-top: 100px;
+    }
+
+    #formulario_contacto {
+        max-width: 70%;
+    }
+
+    #comentario {
+        max-width: 370px;
+    }
+}
+@media (max-width:576px) {
+
+    .menucabecera {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 9rem;
+    }
+    
+
+    #titulo {
+        margin-top: 50px;
     }
 
     #formulario_contacto {
@@ -528,7 +733,7 @@ label {
     }
 
     #comentario {
-        max-width: 370px;
+        max-width: 350px;
     }
 }
 
@@ -537,7 +742,7 @@ label {
 .bodycv {
     margin-left:10%;
     margin-right:10%;
-    margin-top: 5%; 
+    margin-top: 10%; 
 }
 
 .contenedor {
@@ -705,17 +910,69 @@ div .foto {
 }
 
 .media_query {
-    display: none; /*para que no aparezca si el tamaño de la pantalla es mayor a 576px*/
+    display: none; /*para que no aparezca si el tamaño de la pantalla es mayor a 576px o 992px*/
+}
+
+@media (max-width:992px) {
+    
+    .menucabecera {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 9rem;
+    }
+    
+    .contenedor {
+        display: none; /*para que no aparezca el CV si el tamaño de la pantalla es menor a 992px*/
+    }
+
+    .media_query {
+        display:block;
+        margin-top: 80px;
+    }
+
+    .media_query p {
+        margin-top: 10rem;
+        font-family: escrita;
+        font-size: 20px;
+        text-align: center;
+    }    
+
+    .media_query a {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-family: titulo;
+        font-size: 50px;
+        text-decoration: none;
+        color: darkorchid;
+    }
+
+    .media_query a:hover{
+        background-color: black;
+        color: white;
+        transition: 2s;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width:576px) {
+    
+    .menucabecera {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 9rem;
+        text-align: center;
+    }
+
     .contenedor {
         display: none; /*para que no aparezca el CV si el tamaño de la pantalla es menor a 576px*/
     }
 
     .media_query {
         display:block;
-        margin-top: 250px;
+        margin-top: 80px;
     }
 
     .media_query p {
